@@ -14,6 +14,7 @@ git clone https://github.com/opencv/opencv_contrib.git
 https://docs.opencv.org/3.4.1/d7/d9f/tutorial_linux_install.html
 
 we should also install the following:
+```
 gstreamer1.0
 gstreamer1.0-libav
 gstreamer1.0-python
@@ -21,6 +22,7 @@ gstreamer1.0-rtsp-server
 gstreamer1.0-rtsp-server-dev
 gstreamer1.0-plugins-bad
 gstreamer1.0-plugins-good
+```
 
 #### building
 ```
