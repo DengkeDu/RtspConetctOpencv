@@ -42,12 +42,15 @@ second console:
 ```
 ./test-launch "( tcpclientsrc host=127.0.0.1 port=5001 ! gdpdepay ! rtph264pay pt=96 name=pay0 )"
 ```
+```
 ### opencv side
 1. run the build.sh script
 or
 2. mkdir build && cd build && cmake .. && make
 or
 3. python opencv_rtsp.py
+or
+4. gst-launch-1.0 rtspsrc location="rtsp://rtsp_server_ip:8554/test" latency=0 ! rtph264depay ! decodebin ! videoconvert ! ximagesink
 
 ### NOTE2
 the ip in opencv_rtsp.py and opencv_rtsp.cpp, you need to replace you raspberrypi's ip.
