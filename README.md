@@ -65,3 +65,10 @@ or
 
 ### NOTE2
 the ip in opencv_rtsp.py and opencv_rtsp.cpp, you need to replace you raspberrypi's ip.
+
+### audio
+```
+pactl list | grep -A2 'Source #' | grep 'Name: ' | cut -d" " -f2
+gst-launch-1.0 pulsesrc device="alsa_input.usb-C-Media_Electronics_Inc._USB_PnP_Sound_Device-00.analog-mono" ! audioconvert ! autoaudiosink
+```
+
